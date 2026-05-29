@@ -1,0 +1,11 @@
+### GET USER
+GET http://localhost:3001/api/v1/...
+
+### REGISTER USER
+POST http://localhost:3001/api/v1/...
+content-type: application/json
+
+{
+    "username": "Vojtech",
+    "password": "",
+}
