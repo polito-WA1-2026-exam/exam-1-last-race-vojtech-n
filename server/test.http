@@ -1,11 +1,48 @@
-### GET USER
-GET http://localhost:3001/api/v1/...
+### GET USERS
+GET http://localhost:3001/api/v1/user
 
 ### REGISTER USER
-POST http://localhost:3001/api/v1/...
+POST http://localhost:3001/api/v1/user
 content-type: application/json
 
 {
-    "username": "Vojtech",
-    "password": "",
+    "username": "vojtech",
+    "password": "Ah@1"
 }
+
+### UPDATE BEST SCORE
+# PATCH http://localhost:3001/api/v1/user/:username/score
+PATCH http://localhost:3001/api/v1/user/vojtech/score
+content-type: application/json
+
+{
+  "newBestScore": 50
+}
+
+### UPDATE BEST SCORE
+# PATCH http://localhost:3001/api/v1/user/:username/game
+POST http://localhost:3001/api/v1/user/anna/game
+
+### LOGIN USER
+POST http://localhost:3001/api/v1/auth/login
+content-type: application/json
+
+{
+  "username": "anna",
+  "password": "321anna" 
+}
+
+### LOGIN USER (wrong password)
+POST http://localhost:3001/api/v1/auth/login
+content-type: application/json
+
+{
+  "username": "vojtech",
+  "password": "wrong_password" 
+}
+
+### LOGOUT USER
+DELETE http://localhost:3001/api/v1/auth/logout
+
+### CURRET USER
+GET http://localhost:3001/api/v1/auth/current
