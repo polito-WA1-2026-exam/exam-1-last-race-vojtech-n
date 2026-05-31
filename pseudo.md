@@ -21,3 +21,10 @@ App allows to play multiple games, each game starts with 20 coins and consist of
 2. Planning
 3. Execution
 4. Result
+
+Design hry:
+Co je potreba?
+- Mit mapku vsech linek a zastavek
+- Mit mapku vsech zastavek (bez linek)
+- Zvolit startovni zastavku a cilovou zastavku, alespon 3 zapsavky mezi nimi
+- Mit seznam vsech segmentu
